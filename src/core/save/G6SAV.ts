@@ -93,6 +93,10 @@ export abstract class G6SAV extends OfficialSAV<PK6> {
     }
   }
 
+  getPluginIdentifier() {
+    return undefined
+  }
+
   prepareBoxesAndGetModified() {
     const changedMonPKMs: OHPKM[] = []
 
