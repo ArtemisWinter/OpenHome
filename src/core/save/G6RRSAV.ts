@@ -13,7 +13,19 @@ export class G6RRSAV extends ORASSAV {
   static saveTypeName = 'Pokémon Rutile Ruby/Star Sapphire';
   static saveTypeID = 'G6RRSAV';
 
-  static getPluginIdentifier() {
+  private static readonly originPluginMap: Record<OriginGame, string> = {
+    [OriginGame.OmegaRuby]: 'rutile_ruby',
+    [OriginGame.AlphaSapphire]: 'star_sapphire',
+  };
+
+  static getPluginIdentifier(origin?: OriginGame) {
+    if (origin && this.originPluginMap[origin]) {
+      return this.originPluginMap[origin];
+    }
     return 'rutile_ruby_star_sapphire';
+  }
+
+  static getAllPluginIdentifiers() {
+    return Object.values(this.originPluginMap);
   }
 }
