@@ -571,6 +571,8 @@ pub fn plugin_color(plugin_identifier: &str) -> &'static str {
     match plugin_identifier {
         "unbound" => "#C127FE",
         "radical_red" => "#660000",
+        "rutile_ruby" => "#AB2813",
+        "star_sapphire" => "#26649C",
         "rutile_ruby_star_sapphire" => "#694658",
         "nova_sun" => "#F1912B",
         "umbra_moon" => "#5599CA",
