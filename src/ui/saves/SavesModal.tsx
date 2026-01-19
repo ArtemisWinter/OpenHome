@@ -113,8 +113,6 @@ function useOpenSaveHandler(onClose?: () => void) {
               let saveTypes = getPossibleSaveTypes(fileBytes, getEnabledSaveTypes())
 
               if (saveTypes.length === 1) {
-                const pluginOmega = G6RRSAV.getPluginIdentifier(OriginGame.OmegaRuby)
-                const pluginAlpha = G6RRSAV.getPluginIdentifier(OriginGame.AlphaSapphire) 
                 await buildAndOpenSave(saveTypes[0], filePath, fileBytes)
                 return
               }
