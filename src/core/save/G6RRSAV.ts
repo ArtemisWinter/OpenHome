@@ -1,7 +1,7 @@
 import { PK6 } from '@pokemon-files/pkm'
 import { Box, BoxCoordinates } from './interfaces'
 import { PathData } from './util/path'
-import { G6SAV } from './gen6sav'
+import { G6SAV } from './G6SAV'
 
 export class G6RutileRubySAV extends G6SAV {
   static saveTypeAbbreviation = 'Rutile Ruby'
