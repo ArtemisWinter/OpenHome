@@ -16,12 +16,11 @@ export class G6RRSAV extends ORASSAV {
   static getPluginIdentifier() {
     return 'rutile_ruby_star_sapphire';
   }
-}
 
   static includesOrigin(origin: OriginGame) {
     return (
       origin === OriginGame.RutileRuby ||
       origin === OriginGame.StarSapphire
-    )
-  };
+    );
+  }
 }
