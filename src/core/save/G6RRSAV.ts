@@ -8,7 +8,9 @@ export class G6RRSAV extends G6SAV {
   static saveTypeName = 'Pokémon Rutile Ruby'
   static saveTypeID = 'G6RRSAV'
 
-  pluginIdentifier: string = 'rutile_ruby'
+  static getPluginIdentifier() {
+    return 'radical_red'
+  }
 
   constructor(path: PathData, bytes: Uint8Array, pcOffset: number, pcChecksumOffset: number, pluginIdentifier = 'rutile_ruby') {
     super(path, bytes, pcOffset, pcChecksumOffset)
