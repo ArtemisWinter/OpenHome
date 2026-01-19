@@ -3,7 +3,7 @@ import { Box, BoxCoordinates } from './interfaces'
 import { PathData } from './util/path'
 import { G6SAV } from './G6SAV'
 
-export class G6RutileRubySAV extends G6SAV {
+export class G6RRSAV extends G6SAV {
   static saveTypeAbbreviation = 'Rutile Ruby'
   static saveTypeName = 'Pokémon Rutile Ruby'
   static saveTypeID = 'G6RRSAV'
