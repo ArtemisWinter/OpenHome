@@ -1,5 +1,3 @@
-import { PK6 } from '@pokemon-files/pkm'
-import { Box, BoxCoordinates } from './interfaces'
 import { ORASSAV } from './ORASSAV'
 import { PathData } from './util/path'
 
