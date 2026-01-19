@@ -11,6 +11,7 @@ import { SwShSAV } from '@openhome-core/save/Gen89/SwShSAV'
 import { HGSSSAV } from '@openhome-core/save/HGSSSAV'
 import { LGPESAV } from '@openhome-core/save/LGPESAV'
 import { ORASSAV } from '@openhome-core/save/ORASSAV'
+import { G6RutileRubySAV } from 'openhome-core/save/ORASSAV'
 import { PtSAV } from '@openhome-core/save/PtSAV'
 import { G3RRSAV } from '@openhome-core/save/radicalred/G3RRSAV'
 import { SMSAV } from '@openhome-core/save/SMSAV'
@@ -33,6 +34,7 @@ const OFFICIAL_SAVE_TYPES = [
   BW2SAV,
   XYSAV,
   ORASSAV,
+  G6RutileRubySAV,
   SMSAV,
   USUMSAV,
   LGPESAV,
@@ -41,7 +43,7 @@ const OFFICIAL_SAVE_TYPES = [
   LASAV,
   SVSAV,
 ]
-const EXTRA_SAVE_TYPES = [G3RRSAV, G3UBSAV]
+const EXTRA_SAVE_TYPES = [G3RRSAV, G3UBSAV, G6RutileRubySAV]
 
 export function initialMonDisplayState() {
   return { filter: {}, topRightIndicator: null, showShiny: true, showItem: true }
