@@ -9,7 +9,7 @@ export class G6RRSAV extends G6SAV {
   static saveTypeID = 'G6RRSAV'
 
   static getPluginIdentifier() {
-    return 'radical_red'
+    return 'rutile_ruby'
   }
 
   constructor(path: PathData, bytes: Uint8Array, pcOffset: number, pcChecksumOffset: number, pluginIdentifier = 'rutile_ruby') {
