@@ -1,12 +1,13 @@
 import { PK6 } from '@pokemon-files/pkm'
 import { Box, BoxCoordinates } from './interfaces'
+import { ORASSAV } from './ORASSAV'
 import { PathData } from './util/path'
-import { G6SAV } from './G6SAV'
 
-export class G6RRSAV extends G6SAV {
+export class G6RRSAV extends ORASSAV {
   static saveTypeAbbreviation = 'Rutile Ruby'
   static saveTypeName = 'Pokémon Rutile Ruby'
   static saveTypeID = 'G6RRSAV'
+  static transferRestrictions = ORAS_TRANSFER_RESTRICTIONS
 
   static getPluginIdentifier() {
     return 'rutile_ruby'
