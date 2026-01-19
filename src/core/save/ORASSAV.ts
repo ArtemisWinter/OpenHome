@@ -31,6 +31,10 @@ export class ORASSAV extends G6SAV {
   static saveTypeName = 'Pokémon Omega Ruby/Alpha Sapphire'
   static saveTypeID = 'ORASSAV'
 
+  getPluginIdentifier() {
+    return undefined
+  }
+
   static includesOrigin(origin: OriginGame) {
     return origin === OriginGame.OmegaRuby || origin === OriginGame.AlphaSapphire
   }
