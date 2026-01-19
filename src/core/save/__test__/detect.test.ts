@@ -12,7 +12,7 @@ import { LASAV } from '../Gen89/LASAV'
 import { SwShSAV } from '../Gen89/SwShSAV'
 import { HGSSSAV } from '../HGSSSAV'
 import { ORASSAV } from '../ORASSAV'
-import { G6RutileRubySAV } from '../G6RRSAV'
+import { G6RRSAV } from '../G6RRSAV'
 import { PtSAV } from '../PtSAV'
 import { G3RRSAV } from '../radicalred/G3RRSAV'
 import { SMSAV } from '../SMSAV'
@@ -51,7 +51,7 @@ const allSaveTypes = [
   BW2SAV,
   XYSAV,
   ORASSAV,
-  G6RutileRubySAV,
+  G6RRSAV,
   SMSAV,
   USUMSAV,
   SwShSAV,
