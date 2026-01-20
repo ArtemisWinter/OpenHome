@@ -13,6 +13,7 @@ export class RutileRuby extends ORASSAV {
   static saveTypeName = 'Pokémon Rutile Ruby'
   static saveTypeID = 'RutileRuby'
   static origin = OriginGame.OmegaRuby
+  isPlugin: true = true
   getPluginIdentifier() {
     return 'rutile_ruby'
   }
@@ -23,6 +24,7 @@ export class StarSapphire extends ORASSAV {
   static saveTypeName = 'Pokémon Star Sapphire';
   static saveTypeID = 'StarSapphire';
   static origin = OriginGame.AlphaSapphire
+  isPlugin: true = true
   getPluginIdentifier() {
     return 'star_sapphire'
   }
