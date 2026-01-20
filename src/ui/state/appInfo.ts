@@ -44,7 +44,7 @@ const OFFICIAL_SAVE_TYPES = [
   LASAV,
   SVSAV,
 ]
-const EXTRA_SAVE_TYPES = [G3RRSAV, G3UBSAV, G6RRSAV]
+const EXTRA_SAVE_TYPES = [G3RRSAV, G3UBSAV, RutileRuby, StarSapphire]
 
 export function initialMonDisplayState() {
   return { filter: {}, topRightIndicator: null, showShiny: true, showItem: true }
