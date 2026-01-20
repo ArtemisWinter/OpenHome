@@ -8,14 +8,21 @@ const PC_OFFSET = 0x33000
 const PC_CHECKSUM_OFFSET = 0x75fda
 const SAVE_SIZE_BYTES = 0x76000
 
-export class G6RRSAV extends ORASSAV {
-  static saveTypeAbbreviation = 'Rutile Ruby/Star Sapphire';
-  static saveTypeName = 'Pokémon Rutile Ruby/Star Sapphire';
-  static saveTypeID = 'G6RRSAV';
+export class RutileRuby extends ORASSAV {
+  static saveTypeAbbreviation = 'Rutile Ruby'
+  static saveTypeName = 'Pokémon Rutile Ruby'
+  static saveTypeID = 'RutileRuby'
+  origin = OriginGame.OmegaRuby
+  getPluginIdentifier() {
+    return 'rutile_ruby'
+  }
+}
 
-  static getPluginIdentifier(origin: OriginGame) {
-    if (origin === OriginGame.OmegaRuby) return 'rutile_ruby';
-    if (origin === OriginGame.AlphaSapphire) return 'star_sapphire';
-    return 'rutile_ruby_star_sapphire'; // default fallback
+export class StarSapphire extends ORASSAV {
+  static saveTypeAbbreviation = 'Star Sapphire';
+  static saveTypeName = 'Pokémon Star Sapphire';
+  static saveTypeID = 'StarSapphire';
+  getPluginIdentifier() {
+    return 'star_sapphire'
   }
 }
