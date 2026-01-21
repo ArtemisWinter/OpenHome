@@ -19,6 +19,7 @@ export const GameLogos: { [key: string]: string } = {
   HeartGold: `logos/HeartGold.png`,
   LeafGreen: `logos/LeafGreen.png`,
   LegendsArceus: `logos/Legends_Arceus.png`,
+  LegendsZa: 'logos/LegendsZa.png`,
   LetsGoEevee: `logos/Lets_Go_Eevee.png`,
   LetsGoPikachu: `logos/Lets_Go_Pikachu.png`,
   Moon: `logos/Moon.png`,
